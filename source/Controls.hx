@@ -12,7 +12,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 import Controls.AddKeys;
 import Controls.RemoveKeys;
-import Controls.setKeyboardScheme;
+import Controls.SetKeyboardScheme;
 #if android
 import flixel.group.FlxGroup;
 import android.flixel.FlxButton;
