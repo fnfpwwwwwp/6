@@ -10,7 +10,7 @@ import flixel.input.actions.FlxActionSet;
 import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
-import Controls.addKeys
+import Controls.AddKeys
 #if android
 import flixel.group.FlxGroup;
 import android.flixel.FlxButton;
@@ -916,7 +916,7 @@ class Controls extends FlxActionSet
 		#end
 	}
 
-	inline static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
+	inline static function AddKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
 	{
 		for (key in keys)
 			if(key != NONE)
