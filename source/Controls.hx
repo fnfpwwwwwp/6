@@ -915,14 +915,14 @@ class Controls extends FlxActionSet
 		#end
 	}
 
-	inline static function addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
+	inline static function Controls.addKeys(action:FlxActionDigital, keys:Array<FlxKey>, state:FlxInputState)
 	{
 		for (key in keys)
 			if(key != NONE)
 				action.addKey(key, state);
 	}
 
-	static function removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
+	static function Controls.removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
 	{
 		var i = action.inputs.length;
 		while (i-- > 0)
@@ -933,7 +933,7 @@ class Controls extends FlxActionSet
 		}
 	}
 
-	public function setKeyboardScheme(scheme:KeyboardScheme, reset = true)
+	public function Controls.setKeyboardScheme(scheme:KeyboardScheme, reset = true)
 	{
 		if (reset)
 			removeKeyboard();
