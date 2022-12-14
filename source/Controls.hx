@@ -11,6 +11,8 @@ import flixel.input.gamepad.FlxGamepadButton;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.keyboard.FlxKey;
 import Controls.AddKeys;
+import Controls.RemoveKeys;
+import Controls.setKeyboardScheme;
 #if android
 import flixel.group.FlxGroup;
 import android.flixel.FlxButton;
@@ -923,7 +925,7 @@ class Controls extends FlxActionSet
 				action.addKey(key, state);
 	}
 
-	static function Controls.removeKeys(action:FlxActionDigital, keys:Array<FlxKey>)
+	static function RemoveKeys(action:FlxActionDigital, keys:Array<FlxKey>)
 	{
 		var i = action.inputs.length;
 		while (i-- > 0)
@@ -934,7 +936,7 @@ class Controls extends FlxActionSet
 		}
 	}
 
-	public function Controls.setKeyboardScheme(scheme:KeyboardScheme, reset = true)
+	public function SetKeyboardScheme(scheme:KeyboardScheme, reset = true)
 	{
 		if (reset)
 			removeKeyboard();
